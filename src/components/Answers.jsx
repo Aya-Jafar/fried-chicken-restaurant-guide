@@ -7,16 +7,8 @@ function Answers() {
     { meaning: "to help others", isTrue: false },
   ];
 
-  const [selectedAnswerIndex, setSelectedAnswerIndex] = useState(null);
+//   const [selectedAnswerIndex, setSelectedAnswerIndex] = useState(null);
 
-
-  const changeStatus = (e, answer) => {
-    if (answer.isTrue) {
-      e.target.style.backgroundColor = "green";
-    } else {
-      e.target.style.backgroundColor = "red";
-    }
-  };
 
   return (
     <>
