@@ -10,6 +10,14 @@ function Answers() {
 //   const [selectedAnswerIndex, setSelectedAnswerIndex] = useState(null);
 
 
+  const changeStatus = (e, answer) => {
+    if (answer.isTrue) {
+      e.target.style.backgroundColor = "green";
+    } else {
+      e.target.style.backgroundColor = "red";
+    }
+  };
+
   return (
     <>
       {initial.map((answer, index) => {
