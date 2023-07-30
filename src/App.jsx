@@ -1,21 +1,19 @@
 import "./App.css";
-import ResturantPage from "./components/ResturantPage";
-import RestaurantDetails from "./components/ResturantDetails";
+import Answers from "./components/Answers";
 
 
 function App() {
-  const currentUrl = window.location.href;
-  console.log(currentUrl);
-
   return (
     <div className="App">
-      <h1>Fried Chicken Guide Web App</h1>
-      {currentUrl === "http://localhost:3001/" ? (
-        <ResturantPage />
-      ) : (
-        <h1>bye</h1>
-      )}
+      <h1>Quiz App</h1>
+      <div className="question">
+        <h1>what's the meaning of life?</h1>
+      </div>
+      <Answers/>
+
+    
     </div>
+
   );
 }
 
