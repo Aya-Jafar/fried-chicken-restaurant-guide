@@ -1,7 +1,6 @@
 import "./App.css";
 import Answers from "./components/Answers";
 
-
 function App() {
   return (
     <div className="App">
@@ -9,11 +8,8 @@ function App() {
       <div className="question">
         <h1>what's the meaning of life?</h1>
       </div>
-      <Answers/>
-
-    
+      <Answers />
     </div>
-
   );
 }
 
